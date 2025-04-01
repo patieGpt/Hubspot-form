@@ -9,7 +9,7 @@
   <style>
     body {
       background-color: transparent;
-      font-family: 'CeraPro', sans-serif;
+   font-family: 'CeraPro', sans-serif;
       margin: 0;
     }
     .form-container {
@@ -43,12 +43,12 @@
     }
     .form-container button {
       width: 33%;
-      padding: 10px;
-      background-color: #c63527;
-      color: white;
+      padding: 13px;
+     background-color: white; /* White background */
+      color: red;
       font-size: 20px;
       font-weight: bold;
-      border: none;
+     border: 2px solid red; /* Red border */
       cursor: pointer;
       margin-top: 10px;
       transition: 0.3s;
@@ -161,23 +161,38 @@
         gap: 7px;
     }
 
-    /* Center the button */
-    button {
-        align-self: center; /* Center the button horizontally */
-        padding: 10px 20px; /* Add padding to the button */
-        background-color: #007bff; /* Blue background color */
-        color: white; /* White text */
-        border: none; /* Remove default border */
-        border-radius: 5px; /* Slightly rounded corners */
-        cursor: pointer; /* Pointer cursor on hover */
-        font-size: 1em; /* Increase font size for readability */
-        margin-top: 18px; /* Space between the form elements and button */
-    }
+   button {
+    align-self: center; /* Center the button */
+    padding: 10px 30px; /* Adjust padding to match the image */
+    background-color: white; /* White background */
+    color: red; /* Red text */
+    border: 2px solid red; /* Red border */
+    border-radius: 50px; /* Fully rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1.1em; /* Slightly larger text */
+    font-family: 'CeraPro', sans-serif; /* Font match */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    text-transform: capitalize; /* Ensure only first letter is uppercase */
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition */
+}
 
-    /* Optional: Add hover effect for the button */
-    button:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
+/* Hover effect */
+button:hover { 
+    background-color: white; /* white background */
+    color: white; /* red text */
+}
+
+
+.form-text {
+    font-family: 'CeraPro', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px; /* Reduced spacing */
+    line-height: 1.5; /* Adjusted for better readability */
+}
+
 	  #custom_form label {
         display: block;
         margin-bottom: 3px; /* Reduced space below labels */
@@ -214,7 +229,8 @@
     <input type="hidden" id="guild_address_state" name="guild_address_state" style="text-transform: lowercase;">
     <input type="hidden" id="guild_address_country" name="guild_address_country" style="text-transform: lowercase;">
     <input type="hidden" id="ip_address" name="ip_address" style="text-transform: lowercase;">
-	    <p class="form-text">
+
+   <p class="form-text">
     By joining The Dalmore Guild you are opting in to receiving communications from The Dalmore on whisky releases, VIP events and news from our distillery.
 </p>
 <p class="form-text">
