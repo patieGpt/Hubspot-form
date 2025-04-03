@@ -19,12 +19,12 @@
     }
     body {
       background-color: transparent;
-  font-family: 'CeraPro', sans-serif;
+ font-family: 'CeraPro', sans-serif; 
 
       margin: 0;
     }
     .form-container {
-      max-width: 550px;
+      max-width: 636px;
       margin: 0 auto;
       text-align: center;
       border-radius: 0;
@@ -35,6 +35,14 @@
       margin-bottom: 10px;
     }
 	  
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
     .form-container input {
       width: 100%;
       padding: 18px;
@@ -54,13 +62,13 @@
       color: #999;
     }
     .form-container button {
-      width: 30%;
-      padding: 15px;
+      width: 35%;
+      padding: 17px;
      background-color: white; /* White background */
-      color: #c63527;
-      font-size: 20px;
+      color: #C63527;
+      font-size: 18px;
       font-weight: bold;
-     border: 2px solid #c63527; /* Red border */
+     border: 2px solid #C63527; /* Red border */
       cursor: pointer;
       margin-top: 10px;
       transition: 0.3s;
@@ -143,7 +151,7 @@
 
     /* Optional: Add some padding to the form container */
     .form-container {
-        max-width: 500px;
+        max-width: 636px;
         margin: 0 auto; /* Center the form */
         padding: 15px;
     }
@@ -165,13 +173,13 @@
         color: #555;
         text-align: left;
     }
-
 label {
-    color: #000; /* Black */
-    font-weight: bold; /* Bold */
+    font-weight: normal !important;
+    color: black !important;
 }
 
-}
+
+
     /* Ensure the form fields are properly spaced and aligned */
     form {
         display: flex;
@@ -179,15 +187,15 @@ label {
         gap: 7px;
     }
 
-   button {
+  button {
     align-self: center; /* Center the button */
     padding: 10px 30px; /* Adjust padding to match the image */
     background-color: white !important; /* White background */
-    color: red !important; /* Red text */
-    border: 2px solid red !important; /* Red border */
+    color: #C63527 !important; /* Red text */
+    border: 2px solid #C63527 !important; /* Red border */
     border-radius: 50px; /* Fully rounded corners */
     cursor: pointer; /* Pointer cursor */
-    font-size: 1.1em; /* Slightly larger text */
+    font-size: 18px; /* Slightly larger text */
     font-family: 'CeraPro', sans-serif; /* Font match */
     font-weight: bold; /* Bold text */
     text-align: center; /* Center text */
@@ -198,11 +206,10 @@ label {
 
 /* Ensure no background change on hover */
 button:hover {
-    background-color: white !important; 
-    color: red !important; 
-    border: 2px solid red !important;
+    background-color: #C63527 !important; 
+    color: #fff !important; 
+    border: 2px solid #C63527 !important;
 }
-
 
 
 .form-text {
@@ -240,7 +247,6 @@ button:hover {
     <input type="email" id="email" name="email" required>
 
     <label for="nearest_city">Nearest city</label>
-</form>
     <p class="description" style="font-size: 0.8em;">
         We would like to share content and exclusive events relevant to your location. Please enter your nearest city below
     </p>
