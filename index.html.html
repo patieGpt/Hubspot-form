@@ -4,12 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
-  
   <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Ty5ZHqoSA2jlyqnyi1c7HqLp6G8Ij7I&libraries=places"></script>
-  
   <link rel="stylesheet" href="Fonts/stylesheet.css">
-
   <style>
     @font-face {
       font-family: 'CeraPro';
@@ -20,10 +17,9 @@
       font-weight: normal;
       font-style: normal;
     }
-
     body {
       background-color: transparent;
- font-family: 'CeraPro', sans-serif; 
+  font-family: 'CeraPro', sans-serif;
 
       margin: 0;
     }
@@ -39,14 +35,6 @@
       margin-bottom: 10px;
     }
 	  
-.roboto-<uniquifier> {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
     .form-container input {
       width: 100%;
       padding: 18px;
@@ -66,13 +54,13 @@
       color: #999;
     }
     .form-container button {
-      width: 35%;
-      padding: 17px;
+      width: 30%;
+      padding: 15px;
      background-color: white; /* White background */
-      color: Red;
+      color: #c63527;
       font-size: 20px;
       font-weight: bold;
-     border: 2px solid red; /* Red border */
+     border: 2px solid #c63527; /* Red border */
       cursor: pointer;
       margin-top: 10px;
       transition: 0.3s;
@@ -177,13 +165,13 @@
         color: #555;
         text-align: left;
     }
+
 label {
-    color: #000; /* Normal black */
-    font-weight: normal; /* Ensures it's not bold */
+    color: #000; /* Black */
+    font-weight: bold; /* Bold */
 }
 
-
-
+}
     /* Ensure the form fields are properly spaced and aligned */
     form {
         display: flex;
@@ -191,7 +179,7 @@ label {
         gap: 7px;
     }
 
-  button {
+   button {
     align-self: center; /* Center the button */
     padding: 10px 30px; /* Adjust padding to match the image */
     background-color: white !important; /* White background */
@@ -214,6 +202,7 @@ button:hover {
     color: red !important; 
     border: 2px solid red !important;
 }
+
 
 
 .form-text {
@@ -241,16 +230,17 @@ button:hover {
 <body>
   <div class="form-container">
     <form id="custom_form">
-    <label for="firstname"><strong><span style="color: red;">*</span> First name</strong></label>
+    <label for="firstname"><span style="color: #c63527;">*</span> First name</label>
     <input type="text" id="firstname" name="firstname" required>
 
-    <label for="lastname"><strong><span style="color: red;">*</span> Last name</strong></label>
+    <label for="lastname"><span style="color: #c63527;">*</span> Last name</label>
     <input type="text" id="lastname" name="lastname" required>
 
-    <label for="email"><strong><span style="color: red;">*</span> Your email address</strong></label>
+    <label for="email"><span style="color: #c63527;">*</span> Your email address</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="nearest_city"><strong>Nearest city</strong></label>
+    <label for="nearest_city">Nearest city</label>
+</form>
     <p class="description" style="font-size: 0.8em;">
         We would like to share content and exclusive events relevant to your location. Please enter your nearest city below
     </p>
