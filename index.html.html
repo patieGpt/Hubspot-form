@@ -177,12 +177,12 @@ label {
         gap: 7px;
     }
 
-   button {
+  button {
     align-self: center; /* Center the button */
     padding: 10px 30px; /* Adjust padding to match the image */
-    background-color: white; /* White background */
-    color: red; /* Red text */
-    border: 2px solid red; /* Red border */
+    background-color: white !important; /* White background */
+    color: red !important; /* Red text */
+    border: 2px solid red !important; /* Red border */
     border-radius: 50px; /* Fully rounded corners */
     cursor: pointer; /* Pointer cursor */
     font-size: 1.1em; /* Slightly larger text */
@@ -194,10 +194,11 @@ label {
     transition: all 0.3s ease; /* Smooth transition */
 }
 
-/* Hover effect */
-button:hover { 
-    background-color: white; /* white background */
-    color: white; /* white text */
+/* Ensure no background change on hover */
+button:hover {
+    background-color: white !important; 
+    color: red !important; 
+    border: 2px solid red !important;
 }
 
 
